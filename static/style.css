@@ -1,0 +1,47 @@
+    /* Establecemos una altura fija para el tbody y activamos el scroll vertical */
+    .table-responsive tbody {
+        display: block;
+        max-height: 300px;
+        /* Puedes ajustar esta altura */
+        overflow-y: auto;
+    }
+
+    /* Aseguramos que los encabezados y las celdas mantengan el mismo tamaño */
+    .table-responsive thead,
+    .table-responsive tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        /* Esto permite que las celdas tengan un ancho uniforme */
+    }
+
+    .marginContenido{
+        margin: 10px;
+    }
+
+#status-footer {
+    /* Fija el elemento a la ventana de visualización */
+    position: fixed; 
+    
+    /* Lo coloca al fondo de la ventana */
+    bottom: 0; 
+    
+    /* Asegura que ocupe todo el ancho */
+    left: 0; 
+    right: 0; 
+    width: 100%;
+    
+    /* Estilo visual */
+    background-color: #333; /* Fondo oscuro */
+    padding: 8px 15px; /* Espaciado interno */
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra superior sutil */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo para el label (opcional) */
+#info-sistema {
+    display: block; /* Asegura que la etiqueta ocupe el espacio */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}

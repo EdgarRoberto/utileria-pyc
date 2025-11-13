@@ -1,0 +1,6 @@
+pyinstaller --onefile --name pyc-utileria run.spec    
+pyinstaller --name pyc-utileria run.spec      
+pyinstaller run.spec   
+
+pyinstaller run.spec  --- este es el bueno solo este
+pyi-makespec tu_script.py
